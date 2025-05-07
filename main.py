@@ -124,3 +124,6 @@ def recommend(data: InputData):
         "recommendations": recommendations,
         "chart": image_base64
     }
+@app.get("/")
+def read_root():
+    return {"message": "CareerDendogram API is up and running!"}
